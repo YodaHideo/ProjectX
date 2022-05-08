@@ -14,7 +14,6 @@ namespace main
         {
             InitializeComponent();
             MainFoto.SizeChanged += MainFoto_SizeChanged;
-            
         }
 
         private void MainFoto_SizeChanged(object sender, EventArgs e)
@@ -34,7 +33,7 @@ namespace main
             vs.Add(9);
             vs.Add(10);
             vs.Add(11);
-            output MainOut = new output(vs, 1000 / Convert.ToDouble(label1.Text), 1000 / 392.7272727);
+            output MainOut = new output(vs, 1000 /width, 1000 /height);
             a = MainOut.MakeLine();
             lolik.Children.Add(a);
         }
