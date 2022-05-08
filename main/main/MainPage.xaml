@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="main.MainPage"
+             x:Name="contentPage">
+
+    <StackLayout x:Name="lol" BackgroundColor="White">
+        <Grid x:Name="lolik" MinimumHeightRequest="400">
+            <Image x:Name="MainFoto" Source="etazh42.png" VerticalOptions="Center"/>
+        </Grid>
+        <StackLayout BackgroundColor="White" HeightRequest="1000">
+        <Label Text="hi" x:Name="label1" TextColor="Black"></Label>
+        <Label Text="hi" x:Name="label2" TextColor="Black"></Label>
+            <Button Text="-" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMain"
+                Clicked="OnButtonClicked"/>
+            <Button Text="+" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMain1"
+                Clicked="OnButtonClicked1"/>
+            <Button Text="UP" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMainUP"
+                Clicked="OnButtonClickedUP"/>
+        <Button Text="Down" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMainDown"
+                Clicked="OnButtonClickedDown"/>
+            <Button Text="Left" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMainLeft"
+                Clicked="OnButtonClickedLeft"/>
+            <Button Text="Right" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMainRight"
+                Clicked="OnButtonClickedRight"/>
+            <Button Text="Center" HeightRequest="40"
+                HorizontalOptions="Center"
+                x:Name="buttonMainCenter"
+                Clicked="OnButtonClickedCenter"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
