@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="main.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#939393">
+            <StackLayout Orientation="Horizontal" x:Name="up_text">
+                <Label x:Name="label_login" Text="login" TextDecorations="Underline" TextColor="White" FontSize="24"/>
+                <Label x:Name="label_ylk" Text="УЛК 05" TextColor="White" FontSize="24" HorizontalOptions="EndAndExpand"/>
+                <Image x:Name="ylk_foto" Source="image053.png" HeightRequest="20"/>
+            </StackLayout>
+            <Label x:Name="label1" Text="От куда" TextColor="White" FontSize="24" HorizontalOptions="Center"/>
+            <Frame x:Name="frame1" Padding="1" BackgroundColor="Black">
+            <Entry TextColor="White" BackgroundColor="#787878"/>
+            </Frame>
+            <Label x:Name="label2" Text="Куда" TextColor="White" FontSize="24" HorizontalOptions="Center"/>
+            <Frame x:Name="frame2" Padding="1" BackgroundColor="Black">
+                <Entry TextColor="White" BackgroundColor="#787878"/>
+            </Frame>
+            <Button x:Name="button1" Text="Искать" TextColor="White" BackgroundColor="#878787" BorderWidth="1" BorderColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

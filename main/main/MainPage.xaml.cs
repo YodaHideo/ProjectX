@@ -7,13 +7,19 @@ namespace main
 {
     public partial class MainPage : ContentPage
     {
+
         Polyline a = new Polyline();
         double width = 0;
         double height = 0;
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             MainFoto.SizeChanged += MainFoto_SizeChanged;
+        }
+
+        private void LineOverLine()
+        {
+            
         }
 
         private void MainFoto_SizeChanged(object sender, EventArgs e)
@@ -64,7 +70,7 @@ namespace main
         }
         void OnButtonClickedCenter(object sender, EventArgs args)
         {
-            // ломаная прямая
+            Navigation.PushModalAsync(new Page1());
         }
     }
 }
